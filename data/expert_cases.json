@@ -1,0 +1,1769 @@
+{
+  "metadata": {
+    "dataset_name": "Funspire North America Cultural Adaptation Expert Rules",
+    "version": "2026-06-demo",
+    "target_market": "北美",
+    "description": "由四个短剧项目的剧本修改意见整理成的专家标注数据，可用于 Streamlit Demo 的规则匹配、文化适配诊断、修改建议输出。",
+    "projects": [
+      "My Disabled Husband Is a Tech Billionaire",
+      "Shadow Boss’s Debt Bride",
+      "Silver Alpha’s Hidden Queen",
+      "The Divorced Hale Heiress"
+    ],
+    "case_count": 99,
+    "rule_count": 99,
+    "note": "Shadow Boss’s Debt Bride 的修改意见因上传文件同名，在沙盒中无独立本地文件；本数据根据上传解析内容整理。"
+  },
+  "cases": [
+    {
+      "case_id": "case_002",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "Ethan：签了。你这种出身的女人，配不上现在的 Hayes Tech。婚内无共同财产，你净身出户。",
+      "problem": "离婚羞辱表述模糊，女主逆袭动机薄弱，观众共情不足。",
+      "reason": "北美观众对「具象化财产掠夺」敏感度更高，空泛的 “净身出户” 冲击力弱，明确的资产侵占更能激发观众对女主的共情与对反派的愤怒。",
+      "suggestion": "补充具体财产损失细节：抵押女主母亲留下的公寓、侵占女主设计成果、冻结女主所有账户，用具象的掠夺强化羞辱感与逆袭动机。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "净身出户"
+      ]
+    },
+    {
+      "case_id": "case_003",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "一辆黑色劳斯莱斯悄无声息停在面前，后车窗缓缓降下。Julian Thorne 坐在后座，西装笔挺，侧脸冷硬，深邃眼眸落在她脸上。Julian：嫁给我。我帮你，把属于你的一切都夺回来。",
+      "problem": "男主出场身份感不足，大佬逼格不够，契约交易的冲击力弱。",
+      "reason": "北美观众对「华尔街标签」认可度极高，男主身份需要快速、明确地落地，让观众立刻感知到 “这是能帮女主翻盘的顶级大佬”，而非模糊的霸总形象。",
+      "suggestion": "增加男主身份标识（Thorne 资本铂金徽章、华尔街投资狼王的身份旁白），同时补充女主当下的绝境状态（余额不足百元、无家可归），强化契约 = 唯一翻盘筹码的戏剧张力。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "契约"
+      ]
+    },
+    {
+      "case_id": "case_004",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "她拿出手机，搜索 “Hale 家族纹章”，跳出的图片和戒指上的图案分毫不差。日记里写着母亲因拒婚离家，女主通过纹章确认自己的豪门血脉。",
+      "problem": "“家族纹章认亲”“认祖归宗” 的设定中式宗族感过重，不符合北美豪门规则。",
+      "reason": "北美豪门的核心规则是信托、股权、法律文件，不存在宗族式的认亲逻辑，身份确认均通过法律文书、家族信托受益人条款完成，纹章认亲的设定观众共鸣弱、违和感强。",
+      "suggestion": "替换为母亲留下的封存家族信托文件副本，明确标注遗产解锁条件，用法律合规的信托遗产线替代宗族认亲线。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "Hale 家族纹章",
+        "家族纹章认亲",
+        "认祖归宗"
+      ]
+    },
+    {
+      "case_id": "case_005",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "Ethan “扑通” 一声跪下，声泪俱下求 Scarlett 复婚，说自己知道错了，求女主看在夫妻一场的份上帮帮自己。",
+      "problem": "反派 “下跪认错” 的情节过于中式，不符合北美男性功利性人设。",
+      "reason": "北美现实题材反派多为精致利己主义者，不会通过下跪示弱达成目的，利益交换、功利算计才是符合人设的行为逻辑，下跪情节会让观众觉得违和、不真实。",
+      "suggestion": "改为 Ethan 拿着合作意向书上门，以 “复婚 = 拿到 Hale 投资” 为条件功利性求和，全程无歉意、只有算计，强化反派的利己人设。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "扑通",
+        "下跪认错",
+        "下跪"
+      ]
+    },
+    {
+      "case_id": "case_006",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "她立刻去查监控，却发现工作室门口的监控，刚好在那段时间坏了，画面一片漆黑。",
+      "problem": "“监控刚好坏掉” 的桥段俗套老套，盗窃过程儿戏，不符合基本安保逻辑。",
+      "reason": "北美观众注重剧情合理性，巧合式的 “监控故障” 会降低剧情可信度，观众更认可有预谋的人为破坏、且有对应痕迹可查的设定。",
+      "suggestion": "改为被买通的实习生故意碰掉监控电源制造故障，同时女主保留云端加密备份、可恢复电脑删除日志，用专业手段固定证据，强化女主的缜密人设。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "监控刚好坏掉"
+      ]
+    },
+    {
+      "case_id": "case_007",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "三十分钟现场即兴创作，Scarlett 当场做出一整件完整礼服，赢得全场掌声。",
+      "problem": "30 分钟制作完整礼服违背物理常识，剧情悬浮失真，逻辑硬伤明显。",
+      "reason": "北美职业题材观众注重专业合理性，无限制的主角光环会降低剧情可信度，专业能力的体现需要符合行业基本规律。",
+      "suggestion": "改为 “现场即兴改造基础款白裙”，通过解构剪裁、面料拼接、色彩晕染完成创意升级，既体现女主专业能力，又符合实际操作逻辑。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "三十分钟",
+        "现场即兴创作"
+      ]
+    },
+    {
+      "case_id": "case_008",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "Vivian 脸色惨白，在所有人鄙夷的目光里，狼狈地跑下了台。",
+      "problem": "反派打脸仅停留在 “社死丢脸” 层面，无实际惩罚，爽感不足、落地性弱。",
+      "reason": "北美观众更认可 “实际代价” 的打脸，单纯的社死爽感有限，职业封杀、法律追责、经济损失等实质性惩罚，才能让观众获得充分的爽感反馈。",
+      "suggestion": "补充评委团当场表决：Vivian 因盗窃参赛作品被终身禁赛、全行业通报，明确职业层面的实质性惩罚，让打脸爽点落地。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "社死丢脸"
+      ]
+    },
+    {
+      "case_id": "case_009",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "慈善晚宴上女主放出 Cora 密谋的录音，Harold 震怒，当场停去 Cora 所有职务，移出集团管理层。",
+      "problem": "第 21 集就正面扳倒核心反派 Cora，导致后续 31-40 集剧情高度重复，观众审美疲劳。",
+      "reason": "中段反派过早彻底落败，后续剧情只能重复 “爆黑料→栽赃→扳倒” 的同款套路，剧情无递进、无升级，大幅降低观众追更欲望。",
+      "suggestion": "本次晚宴改为 Cora 幕后操盘、Ethan 出面当枪，女主澄清名誉但未揪出 Cora 本人，反派藏在暗处持续布局，为后续商业战争升级做铺垫，避免剧情重复。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "慈善晚宴上女主放出",
+        "Cora",
+        "密谋的录音",
+        "Harold",
+        "震怒"
+      ]
+    },
+    {
+      "case_id": "case_010",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "31-40 集重复上演：Cora 与 Ethan 联手→晚宴爆母亲黑料→面料以次充好栽赃→女主当众揭穿→Cora 被逐出家族。",
+      "problem": "中段剧情严重注水重复，与 21-30 集核心套路完全一致，属于无效剧情。",
+      "reason": "北美短剧节奏要求紧凑、层层升级，重复的阴谋 - 打脸套路会让观众快速失去兴趣，是短剧内容的核心大忌。",
+      "suggestion": "删除重复的家族内斗剧情，升级为 Cora 联合欧洲奢侈品巨头 LVM，通过挖团队、抄经典、做空股价发动商业战争，女主以智能高定跨界破局，将宅斗升级为商战，提升剧情格局与新鲜感。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "逐出家族"
+      ]
+    },
+    {
+      "case_id": "case_011",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "第 28 集 Ethan 已被判入狱，第 41 集再次出现 Ethan 绑架女主的情节。",
+      "problem": "绑架桥段重复俗套，且与前文入狱设定逻辑断裂，剧情合理性崩塌。",
+      "reason": "已入狱的反派再次出来作案不符合司法逻辑，且绑架套路在前期已用过一次，重复使用会让观众觉得剧情枯竭、创作力不足。",
+      "suggestion": "改为 Cora 狗急跳墙，买通工人在样衣车间制造工伤事故，意图让女主受伤错过米兰时装周，女主凭借冷静专业化解危机，用职场危机替代俗套绑架。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "绑架"
+      ]
+    },
+    {
+      "case_id": "case_012",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "每次女主遇到危机，都是男主及时赶到英雄救美，女主全程被动等待救援。",
+      "problem": "女主过度依赖男主，大女主人设薄弱，不符合北美女性独立的审美导向。",
+      "reason": "北美女频爽剧核心是 “女主自我成长、自我救赎”，男主是辅助而非救世主，频繁的英雄救美会弱化女主光环，降低女性观众的代入感与认同感。",
+      "suggestion": "核心危机由女主主导破局、男主锦上添花，比如车间事故女主自救 + 固定证据，米兰秀场女主当场抓包内鬼，强化女主的冷静与专业能力，男主仅做后续资源加持。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "英雄救美",
+        "男主及时赶到"
+      ]
+    },
+    {
+      "case_id": "case_013",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "行业寒冬来袭，女主独自扛下所有压力，力排众议推动数字化转型，元老们集体反对。",
+      "problem": "缺少女性互助情节，情绪价值不足，不符合北美市场 “girls help girls” 的受众偏好。",
+      "reason": "北美女性题材非常看重女性同盟、传承互助的情绪价值，女主单打独斗的设定格局偏小，女性群体互相扶持的情节更能引发共情、提升口碑。",
+      "suggestion": "增加女主公益基金扶持的年轻设计师群体，在行业寒冬时主动上门抱团取暖，联合打造线上数字秀场，形成 “母亲帮女主→女主帮年轻设计师” 的传承线，强化女性互助主题。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "girls help girls",
+        "元老",
+        "女性互助"
+      ]
+    },
+    {
+      "case_id": "case_014",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "元宇宙时装发布会大获成功，彻底打开年轻市场，Hale 成功渡过行业寒冬。",
+      "problem": "元宇宙发布会设定悬浮，无具体数据支撑，成功来得过于轻易，爽点不落地。",
+      "reason": "北美商战题材观众看重真实的商业成果，空泛的 “大获成功” 说服力弱，具象的业绩数据、市场反馈才能让逆袭爽感真实可感。",
+      "suggestion": "补充具体数据成果：观看人数破 200 万、数字藏品一秒售罄、订单量超线下三个月总和，并用元老当场道歉的情节强化打脸效果，让商战胜利落地。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "元宇宙时装发布会大获成功",
+        "彻底打开年轻市场",
+        "Hale",
+        "成功渡过行业寒冬",
+        "元宇宙发布会设定悬浮"
+      ]
+    },
+    {
+      "case_id": "case_015",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "结局停留在女主爱情事业双丰收，一家三口幸福生活，故事圆满结束。",
+      "problem": "结局格局不足，仅停留在 “个人幸福” 层面，未呼应女主成长弧光，主题升华不够。",
+      "reason": "北美爆款女频剧的结局通常会落点在 “自我实现 + 价值传承”，单纯的爱情事业圆满格局有限，无法给观众留下长久的记忆点与情绪余韵。",
+      "suggestion": "结局落点在女性价值传承：女主落成海岛设计师驻地，扶持全球年轻女设计师，呼应母亲当年的理想，强化 “活成自己的光，也照亮更多人” 的核心主题，首尾闭环、升华格局。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "个人幸福",
+        "结局"
+      ]
+    },
+    {
+      "case_id": "case_016",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "全剧多次出现 “逐出家族”“认祖归宗”“家族元老议事”“登门赔罪” 等表述，采用宗族家长制的权力逻辑。",
+      "problem": "中式宗族逻辑贯穿全剧，北美豪门文化适配性差，观众违和感强。",
+      "reason": "北美豪门的运行规则是现代企业治理、信托法律体系，不存在宗族式的人身依附与家族惩罚，相关设定会大幅降低剧情的真实感与代入感。",
+      "suggestion": "所有宗族表述替换为现代商业规则：解除集团职务、冻结信托收益、董事会罢免、提起法律诉讼、行业封杀等，议事主体改为董事会元老股东，符合现代企业治理逻辑。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "逐出家族",
+        "认祖归宗",
+        "家族元老议事",
+        "登门赔罪",
+        "元老"
+      ]
+    },
+    {
+      "case_id": "case_017",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "多集以平缓场景开篇，单集爽点分布稀疏，部分集数仅结尾有一个钩子，中间节奏拖沓。",
+      "problem": "爽点密度不足，不符合北美短剧 “强节奏、高密度爽点” 的创作规律。",
+      "reason": "北美短剧用户注意力周期短，要求每集前 3 秒有钩子、单集至少 2 个小爽点、每 5 集 1 个大爽点，节奏拖沓会直接导致用户流失。",
+      "suggestion": "全剧执行「黄金三秒」原则，每集开篇直接切入冲突；单集保证 “怼人反杀 + 事业进展 / 感情升温”2 个以上小爽点，均匀分布在开篇、中段、结尾，提升追更粘性。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "强节奏、高密度爽点"
+      ]
+    },
+    {
+      "case_id": "case_018",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO 霸总・豪门逆袭",
+      "original_text": "反派 Cora、Ethan、Vivian 行为动机单一，单纯为了坏而坏，缺少合理的利益驱动与人物层次。",
+      "problem": "反派工具化严重，人设扁平，对手段位低导致女主胜利的含金量不足。",
+      "reason": "北美优质爽剧的反派通常有清晰、具象的动机，有勇有谋的高段位反派，才能凸显女主的能力与智慧，工具人反派会降低剧情的拉扯感与爽感。",
+      "suggestion": "明确每个反派的核心动机：Cora 为争夺集团股权与控制权、Ethan 为偿还债务保住公司、Vivian 为保住上流社会身份，让反派行为逻辑自洽，提升对抗的精彩度。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "反派工具化"
+      ]
+    },
+    {
+      "case_id": "case_019",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Ethan和Vivian在法院门口嘲讽女主，说她没工作没住处，Mia上前护着女主，男主出场解围。",
+      "problem": "前夫羞辱桥段浅白，女主全程被动承受，反击力度不足，大女主人设开篇立不住。",
+      "reason": "北美爽剧要求女主具备“即时反怼”的强气场，受辱后全程被动等待他人救援，会大幅弱化女主光环，降低女性观众代入感。",
+      "suggestion": "增加女主当场反怼的台词，精准戳中Ethan“靠前妻嫁妆创业、靠女人吃软饭”的核心痛点，先用言语反击扳回一城；男主出场是资本层面的兜底加持，而非唯一的救星。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "说她没工作没住处",
+        "Mia上前护着女主",
+        "男主出场解围",
+        "前夫羞辱桥段浅白",
+        "女主全程被动承受"
+      ]
+    },
+    {
+      "case_id": "case_020",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Julian给出婚前协议，契约婚姻一年，期满付五百万美元，对外扮演夫妻。",
+      "problem": "契约条款模糊笼统，缺少北美婚前协议的法律细节，真实感与专业感不足。",
+      "reason": "北美观众对契约婚姻、婚前协议的认知基于真实法律框架，空泛的“扮演夫妻、到期给钱”设定，不符合当地的婚姻与商业契约逻辑。",
+      "suggestion": "补充契约核心条款：婚内财产独立、社交场合共同出席的边界、隐私空间约定、违约赔偿细则、保密条款，强化契约的法律感与真实感。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "婚前协议",
+        "契约"
+      ]
+    },
+    {
+      "case_id": "case_021",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "男主备好所有高定衣物、珠宝和全套专业设计工具，女主被动接受所有安排。",
+      "problem": "女主全程坦然接受男主的物质馈赠，独立人设被削弱，易陷入“靠男人上位”的争议。",
+      "reason": "北美女性受众高度推崇经济与人格独立，女主无边界地接受对方全部物质安排，不符合大女主的核心人设定位，容易引发受众反感。",
+      "suggestion": "增加女主主动表态的情节：日常开销自行承担、设计工具后续用工作室盈利分期偿还，明确两人的边界感，强化女主独立清醒的人设。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "靠男人上位"
+      ]
+    },
+    {
+      "case_id": "case_022",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Ethan和Vivian上门找茬，全程靠男主出面震慑，女主站在身后没有任何动作。",
+      "problem": "家门口的挑衅冲突完全依赖男主解决，女主无任何反击动作，人设偏软弱，主场气场缺失。",
+      "reason": "北美短剧女主需具备“自己的场子自己撑”的特质，私人空间的冲突仍需男主兜底，会大幅弱化女主的人物气场。",
+      "suggestion": "女主先开口怼退两人，精准戳破他们“蹭资源失败、上门找存在感”的真实目的，男主最后出场补全资本层面的震慑，形成“女主主怼、男主兜底”的双层结构。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "全程靠男主出面震慑",
+        "女主站在身后没有任何动作",
+        "女主无任何反击动作",
+        "人设偏软弱",
+        "主场气场缺失"
+      ]
+    },
+    {
+      "case_id": "case_023",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Ethan当众诋毁女主人品，男主拿话筒公开护妻，解决整场冲突。",
+      "problem": "晚宴冲突完全靠男主身份压制，女主未展现任何专业层面的反击，个人职业高光缺失。",
+      "reason": "北美职场向爽剧更认可“用专业能力打脸”，单纯靠伴侣身份撑腰，爽感单薄，也会持续削弱女主的职业价值。",
+      "suggestion": "女主当场抛出Hayes Tech近期设计抄袭的证据、产品的市场差评数据，用专业实力打脸Ethan的行业能力；男主的公开护妻作为情绪加成，而非核心解决方式。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "男主拿话筒公开护妻",
+        "解决整场冲突",
+        "个人职业高光缺失"
+      ]
+    },
+    {
+      "case_id": "case_024",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "一夜之间所有合作方终止和Hayes Tech合作，全因男主一句话。",
+      "problem": "资本碾压过程缺少商业逻辑，男主权力过于“金手指”，剧情悬浮失真。",
+      "reason": "北美商战受众认可符合市场规则的打压，比如撤回投资、切断供应链、下调信用评级等，“一句话全黄”的设定过于儿戏，不符合商业逻辑。",
+      "suggestion": "补充具体商业手段：Thorne资本撤回领投份额、通知上下游供应链终止合作、下调企业信用评级，用合规的商业操作实现碾压，强化真实感。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "金手指"
+      ]
+    },
+    {
+      "case_id": "case_025",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "律师说明遗产解锁条件是“重新拾起设计事业，做出自己的品牌”，表述模糊笼统。",
+      "problem": "遗产解锁条件过于主观，不符合北美家族信托的合规设定，专业感严重不足。",
+      "reason": "北美家族信托的解锁条件均为可量化的明确指标，模糊的“做出品牌”不符合信托行业的常规运作规则，真实感弱。",
+      "suggestion": "明确解锁的量化条件：创立个人设计师品牌、年营收达到指定额度、获得行业权威奖项，三个条件满足其一即可解锁对应比例的遗产，符合信托运作逻辑。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "重新拾起设计事业，做出自己的品牌",
+        "家族信托",
+        "信托"
+      ]
+    },
+    {
+      "case_id": "case_026",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "组委会主动邀请女主直通决赛，实际是男主作为赞助商暗中操作。",
+      "problem": "男主暗中干预比赛结果，弱化女主的专业实力，有“靠关系获奖”的嫌疑，严重损害大女主人设。",
+      "reason": "北美女性题材强调“实力取胜”，靠伴侣资源获得比赛资格，会让女主的胜利彻底失去含金量，引发女性受众的强烈反感。",
+      "suggestion": "改为男主作为赞助商仅要求比赛公平公正，女主凭借过往公开的作品履历、行业奖项，被评审团破格邀请直通决赛，全程无男主私下干预。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "靠关系获奖"
+      ]
+    },
+    {
+      "case_id": "case_027",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Cora仅凭“不入流的人不配在场”的理由，就让保安赶女主走。",
+      "problem": "反派刁难手段太低级粗暴，豪门冲突如同市井吵架，拉低整体剧情格局。",
+      "reason": "北美上流社会的冲突多基于规则、身份、资源的博弈，直接喊保安赶人的行为过于粗暴，不符合高端圈层的行为逻辑。",
+      "suggestion": "Cora以“活动仅限受邀品牌方参与”为由，质疑女主工作室的资质与入场资格，用规则刁难女主，而非粗暴赶人，符合高端圈层的博弈方式。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "不入流的人不配在场"
+      ]
+    },
+    {
+      "case_id": "case_028",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Harold全程暗中观察女主，吩咐手下先不动手，考验女主的能力。",
+      "problem": "“家长式暗中考验”的设定中式感过重，不符合北美豪门家族的相处与决策逻辑。",
+      "reason": "北美豪门家族成员之间更偏向直接的利益沟通与法律流程交接，暗中观察考验的设定更偏向中式家长思维，违和感强。",
+      "suggestion": "改为Harold让律师全程跟进女主的事业进展，严格按照信托条款逐步解锁遗产，考验是基于信托合同规则，而非个人主观的家长式试探。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "家长式暗中考验"
+      ]
+    },
+    {
+      "case_id": "case_029",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Harold让女主认祖归宗，继承Hale集团，女主当场直接拒绝。",
+      "problem": "“认祖归宗”的表述宗族感强烈，且女主拒绝的理由单薄，人物动机立不住。",
+      "reason": "北美豪门不存在“认祖归宗”的宗族概念，身份回归对应的是股权继承、信托生效等法律流程；且女主拒绝需有更具象、更合理的理由。",
+      "suggestion": "Harold提出让女主进入集团任职、逐步承接股权；女主以“自有品牌处于创业期，不想靠家族身份获得职位”为由拒绝，动机更具象合理。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "认祖归宗"
+      ]
+    },
+    {
+      "case_id": "case_030",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "流言四起后，男主单独召开发布会帮女主澄清，全程男主主导解决。",
+      "problem": "舆论危机完全由男主解决，女主无任何公关与专业回应，职场能力被严重弱化。",
+      "reason": "北美职场剧推崇女主具备独立处理危机的能力，个人声誉危机全靠伴侣解决，不符合大女主的成长线设定。",
+      "suggestion": "女主同步放出自己历年设计作品、原创证据链、从业履历，用专业内容回应质疑；男主的发布会从资本与行业层面背书，双方配合共同化解危机。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "流言四起后",
+        "全程男主主导解决",
+        "舆论危机完全由男主解决",
+        "女主无任何公关与专业回应",
+        "职场能力被严重弱化"
+      ]
+    },
+    {
+      "case_id": "case_031",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "露台暧昧被电话打断后，男主直接询问女主是否会和前夫复婚。",
+      "problem": "契约婚姻的拉扯感不足，暧昧推进过于直白突兀，缺少情绪张力。",
+      "reason": "北美契约恋爱题材的核心看点就是“假戏真做的拉扯”，过快戳破窗户纸、直白提问，会大幅降低观剧粘性与期待感。",
+      "suggestion": "增加男主试探、女主回避的细节：男主下意识关心女主饮食作息、女主刻意保持社交距离，用日常细节体现心动，而非直白询问复婚问题。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "契约"
+      ]
+    },
+    {
+      "case_id": "case_032",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Cora送带腐蚀性药剂的花篮，想让女主皮肤溃烂、毁容。",
+      "problem": "反派害人手段过于低级恶毒，更像市井报复，不符合豪门旁支继承人的身份与段位。",
+      "reason": "北美豪门斗争多围绕权力、股权、职位展开，直接人身伤害的手段违法成本极高、收益极低，不符合高层人物的行为逻辑。",
+      "suggestion": "改为Cora买通工作室周边的面料供应商，给女主送劣质面料样品，想让女主选错面料毁掉首秀，用商业手段打压，符合人物身份与行事逻辑。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "毁容"
+      ]
+    },
+    {
+      "case_id": "case_033",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "统筹总监给女主最差的秀场位置，男主一个电话就换成主秀位置。",
+      "problem": "场地问题全程靠男主解决，女主未做任何应对方案，专业能力完全没有体现。",
+      "reason": "北美职场爽剧更认可“困境中靠专业能力破局”，一味靠男主解决问题，会让女主的职业线彻底失去看点。",
+      "suggestion": "女主先根据狭长场地修改走秀动线，设计沉浸式走秀方案，把场地劣势变成风格特色；男主的资源调整是锦上添花，而非唯一解决方案。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "场地问题全程靠男主解决",
+        "女主未做任何应对方案",
+        "专业能力完全没有体现"
+      ]
+    },
+    {
+      "case_id": "case_034",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "礼服被剪后全员慌乱失措，只有女主冷静想办法，团队成员全程工具人。",
+      "problem": "团队人设扁平化，除女主外所有人都只会慌张，职场真实感严重不足。",
+      "reason": "北美职业题材注重团队协作，全员慌乱仅主角开挂的设定过于悬浮，不符合专业设计团队的基本素养。",
+      "suggestion": "增加团队分工细节：有人查监控、有人备备用面料、有人核对改款方案，女主做最终决策，体现团队协作，强化女主的领导力而非单打独斗。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "礼服被剪后全员慌乱失措",
+        "只有女主冷静想办法",
+        "团队成员全程工具人",
+        "团队人设扁平化",
+        "除女主外所有人都只会慌张"
+      ]
+    },
+    {
+      "case_id": "case_035",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "外公当众认亲后，所有人立刻上前巴结讨好，态度转变脸谱化。",
+      "problem": "围观宾客态度转变过于直白脸谱化，人物行为逻辑单一，不符合圈层社交规则。",
+      "reason": "北美上流社会的社交更偏向表面得体、暗中试探，立刻变脸巴结的设定过于市井，不符合高端圈层的社交逻辑。",
+      "suggestion": "众人表面礼貌祝贺，私下议论、观望、试探并存：有人主动递名片谈合作，也有人持怀疑态度暗中调查，让人群反应更多元真实。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "外公当众认亲后",
+        "所有人立刻上前巴结讨好",
+        "态度转变脸谱化",
+        "人物行为逻辑单一",
+        "不符合圈层社交规则"
+      ]
+    },
+    {
+      "case_id": "case_036",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Cora和Ethan一拍即合，决定爆黑料毁掉女主。",
+      "problem": "反派联手过于草率，双方的利益交换不清晰，联手动机单薄。",
+      "reason": "高质量的反派联手需要明确的利益置换，单纯“都讨厌女主”就达成合作，人物行为逻辑不够扎实，可信度低。",
+      "suggestion": "明确双方交易规则：Ethan出面爆料承担全部舆论风险，Cora事成之后给Ethan注入资金、帮他重启公司，利益绑定清晰，联手逻辑更自洽。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "决定爆黑料毁掉女主",
+        "反派联手过于草率",
+        "双方的利益交换不清晰",
+        "联手动机单薄"
+      ]
+    },
+    {
+      "case_id": "case_037",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "老佣人溜进主卧，偷到女主的婚前协议交给Cora。",
+      "problem": "佣人偷文件的桥段老套俗套，且顶级豪宅安保形同虚设，逻辑不合理。",
+      "reason": "北美顶级庄园有严格的安保与隐私保护体系，佣人随意进入主卧偷取私密文件，不符合豪宅的基本安保逻辑。",
+      "suggestion": "改为Cora通过家族律师，以“核查家族成员婚姻状况、确认股权资格”为由，调取协议副本，用合规的家族规则拿到文件，符合豪门办事逻辑。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "婚前协议"
+      ]
+    },
+    {
+      "case_id": "case_038",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "设计部老主管仅凭“规矩不能改”就反对改革，刁难手段低级空泛。",
+      "problem": "职场斗争过于小儿科，老员工反对改革的理由空泛无力，职场真实感弱。",
+      "reason": "北美企业内部的权力博弈，都会以数据、风险、业绩为核心论据，单纯拿“老规矩”当挡箭牌，不符合职场斗争的真实逻辑。",
+      "suggestion": "老主管拿出过往改革失败的案例、预算超支的数据、客户流失的风险报告，用专业论据反对改革，让职场斗争更有含金量与真实感。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "规矩不能改"
+      ]
+    },
+    {
+      "case_id": "case_039",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Harold宣布将Cora逐出Hale家族，永不踏入庄园半步。",
+      "problem": "“逐出家族”的处罚中式宗族感强烈，不符合北美现代企业与家族的规则。",
+      "reason": "北美豪门家族无法从身份上“逐出家族”，对应的处罚是解除职务、收回股权、冻结信托收益、罢免董事席位等商业与法律层面的惩罚。",
+      "suggestion": "改为董事会表决结果：解除Cora所有集团职务、收回其名下的激励股权、冻结家族信托的年度分红，禁止其参与集团任何业务。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "逐出家族"
+      ]
+    },
+    {
+      "case_id": "case_040",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Ethan当街绑架女主，带到废弃仓库勒索钱财，男主赶去救场。",
+      "problem": "绑架桥段俗套陈旧，且与第41集剧情高度重复，同时女主全程被动等待救援，无人设高光。",
+      "reason": "北美现代都市剧里，当街绑架的违法成本极高，多次使用同类桥段会让观众产生审美疲劳，女主被动等待救援也不符合大女人人设。",
+      "suggestion": "本集改为Ethan狗急跳墙，在公开场合当众纠缠女主、散播隐私照片，女主当场报警、发声明澄清，用法律与公关手段处理，替代俗套绑架剧情。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "绑架"
+      ]
+    },
+    {
+      "case_id": "case_041",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "男主替女主挡棍受伤，女主照顾男主，两人感情升温。",
+      "problem": "感情升温仅靠男主受伤的“英雄救美”驱动，女主的情感付出与价值体现不足，感情线失衡。",
+      "reason": "北美健康的感情线是双向奔赴，单方面付出式的升温，会让感情线显得失衡，也弱化了女主在关系里的价值。",
+      "suggestion": "增加女主在男主受伤期间，帮他处理紧急工作、对接重要项目，用自身专业能力帮男主解决职场危机，体现双向扶持，感情升温更自然。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "英雄救美"
+      ]
+    },
+    {
+      "case_id": "case_042",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "元老们以“根基浅、太年轻”为由，反对女主成为继承人。",
+      "problem": "元老反对的理由空泛无力，公司权力斗争流于表面，格局偏小。",
+      "reason": "北美上市公司的董事会斗争，都会以业绩、战略、管理能力为核心论据，单纯拿年龄和资历说事，不符合商业斗争的真实逻辑。",
+      "suggestion": "元老们拿出设计部的预算超支、客户流失率、品牌老化的数据，质疑女主的改革能力与管理水平，用商业论据提出反对，斗争更有真实感。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "根基浅、太年轻",
+        "元老"
+      ]
+    },
+    {
+      "case_id": "case_043",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "LVM抄袭经典款、打价格战，女主当场直接提出做智能高定破局。",
+      "problem": "商战冲突过于表面化，应对方案过于突兀，缺少行业调研与方案铺垫。",
+      "reason": "北美商战剧讲究策略铺垫，对手的进攻有层次，女主的应对也要有调研、有试错，一拍脑袋出方案的设定太悬浮。",
+      "suggestion": "增加女主提前布局智能面料研发的伏笔，面对竞品价格战，女主拿出早已筹备的跨界方案，让破局显得合理，而非灵光一现。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "LVM抄袭经典款",
+        "打价格战",
+        "商战冲突过于表面化",
+        "应对方案过于突兀",
+        "缺少行业调研与方案铺垫"
+      ]
+    },
+    {
+      "case_id": "case_044",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "31-40集完整复刻“反派联手→晚宴爆黑料→面料栽赃→当众揭穿→反派倒台”的剧情，与21-30集高度重合。",
+      "problem": "中段剧情严重注水重复，核心冲突无升级，反派手段无进步，属于大面积无效剧情。",
+      "reason": "北美短剧节奏紧凑，重复的套路会快速消耗观众耐心，是长剧拉胯的核心原因，直接影响完播率与口碑。",
+      "suggestion": "删除重复的家族内斗剧情，重构中段为商业战争线：Cora联合欧洲竞品LVM，通过挖核心团队、抄袭专利、做空股价发动商业进攻，女主用智能高定+数字化运营反击，把宅斗升级为商战。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "与21-30集高度重合",
+        "中段剧情严重注水重复",
+        "核心冲突无升级",
+        "反派手段无进步",
+        "属于大面积无效剧情"
+      ]
+    },
+    {
+      "case_id": "case_045",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Ethan再次绑架女主，男主再次英雄救美。",
+      "problem": "绑架桥段二次出现，剧情重复俗套，且与前文Ethan入狱的设定存在逻辑矛盾。",
+      "reason": "已判刑入狱的人物轻易出来作案，不符合北美司法逻辑，且重复的绑架剧情会让观众觉得创作枯竭、诚意不足。",
+      "suggestion": "改为Cora为翻盘买通车间工人制造工伤事故，想让女主受伤错过米兰时装周，女主冷静自救、固定证据，用职场危机替代绑架剧情。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "英雄救美",
+        "绑架"
+      ]
+    },
+    {
+      "case_id": "case_046",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "男主故意说“按协议给五百万”逗女主，女主暗自失落难过。",
+      "problem": "感情拉扯的桥段过于俗套，类似梗在霸总题材里过度使用，缺少新意，不符合成年男女的感情逻辑。",
+      "reason": "北美观众对烂俗梗的容忍度低，刻意的误会式拉扯会显得人物幼稚，也不符合两个成熟职场人的相处模式。",
+      "suggestion": "改为两人都暗自准备续约/求婚的惊喜，日常相处中细节流露出在意：男主默默记着女主的设计需求、女主悄悄给男主准备纪念日礼物，用细节甜替代刻意误会。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "按协议给五百万"
+      ]
+    },
+    {
+      "case_id": "case_047",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "Ethan买通狱警，找人在婚礼现场闹事捣乱。",
+      "problem": "监狱买通狱警的设定悬浮，且反派闹事手段低级，剧情张力不足。",
+      "reason": "北美监狱监管严格，买通狱警传递消息的违法成本极高，且婚礼闹事的桥段过于老套，缺少新意与逻辑支撑。",
+      "suggestion": "改为Ethan在狱中委托律师，提起离婚后财产分割的诉讼，特意选在婚礼当天送达传票制造舆论风波，用法律手段搞事更符合人物现状。",
+      "severity": "medium",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "Ethan买通狱警",
+        "找人在婚礼现场闹事捣乱",
+        "监狱买通狱警的设定悬浮",
+        "且反派闹事手段低级",
+        "剧情张力不足"
+      ]
+    },
+    {
+      "case_id": "case_048",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "婚礼上外公送上51%的集团股份作为新婚礼物，女主当场成为董事长。",
+      "problem": "大额股权赠与过于儿戏，中式家长式馈赠感重，不符合现代企业治理规则。",
+      "reason": "北美上市公司的股权变更有严格的流程与披露要求，婚礼上当场赠送大额股份，不符合商业合规逻辑，也过于依赖长辈馈赠，削弱女主的奋斗价值。",
+      "suggestion": "改为外公以“业绩达标”为由，按之前的约定逐步转让股权；婚礼上宣布的是“下一财年完成目标后，正式移交董事长职位”，符合商业规则，也保留女主奋斗空间。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "股权"
+      ]
+    },
+    {
+      "case_id": "case_049",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "女主亲自带方案去巴黎，三天就顺利签下Cartier的合作。",
+      "problem": "顶级品牌合作谈成过于轻易，缺少专业博弈，职场爽感不扎实。",
+      "reason": "北美高端商业合作有多轮谈判、方案博弈、利益拉扯，三天轻松签约的设定过于悬浮，体现不出女主的专业能力。",
+      "suggestion": "增加谈判博弈细节：对方质疑Hale的年轻市场渗透率，女主当场拿出数据、调整联名方案与分成模式，用专业能力说服对方，让签约的爽感更扎实。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "女主亲自带方案去巴黎",
+        "顶级品牌合作谈成过于轻易",
+        "缺少专业博弈",
+        "职场爽感不扎实"
+      ]
+    },
+    {
+      "case_id": "case_050",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "女学生设计被抄袭找女主求助，女主靠资本施压让对方道歉赔偿。",
+      "problem": "女性互助流于表面，女主解决问题全靠身份与资本，缺少专业层面的扶持。",
+      "reason": "北美“girls help girls”的核心是能力扶持与精神共鸣，单纯靠权力帮人，本质还是“上位者施舍”，不符合女性互助的内核。",
+      "suggestion": "女主不仅帮学生维权，还邀请她加入公益基金、提供设计实习机会、对接行业资源，从法律、职业、资源多维度扶持，让女性互助更有深度。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "女性互助"
+      ]
+    },
+    {
+      "case_id": "case_051",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "米兰大秀前压轴主纱被勾破，女主现场修改化解危机。",
+      "problem": "礼服破损+现场修改的桥段，与第18集大秀事故剧情高度重复，创意枯竭。",
+      "reason": "同类型的“秀场意外+女主救场”剧情重复出现，会让观众产生审美疲劳，也看不到人物能力的成长。",
+      "suggestion": "改为秀场当天合作方的珠宝配饰临时被扣海关，女主现场用面料与手工钉珠制作替代配饰，把服装与配饰结合，化解危机的同时呈现新的设计亮点。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "米兰大秀前压轴主纱被勾破",
+        "女主现场修改化解危机",
+        "礼服破损+现场修改的桥段",
+        "创意枯竭"
+      ]
+    },
+    {
+      "case_id": "case_052",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "女主整理母亲手稿做纪念系列，上线就销量爆表。",
+      "problem": "母亲手稿的纪念系列缺少设计细节与情感内核，成功来得过于轻易，缺少说服力。",
+      "reason": "北美情怀向产品需要情感与设计的双重支撑，单纯“母亲手稿”就销量爆火，缺少打动人心的细节，也体现不出女主的二次创作价值。",
+      "suggestion": "补充系列的设计细节：把母亲当年的经典元素，与现代可持续面料、剪裁结合，每一件都标注设计灵感与母亲的故事，让传承有具体落点。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "上线就销量爆表",
+        "成功来得过于轻易",
+        "缺少说服力"
+      ]
+    },
+    {
+      "case_id": "case_053",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "女主怀孕后灵感迸发，做孕妇高定系列，还没上线就收到大量预定。",
+      "problem": "孕妇系列的设定过于想当然，缺少市场调研与用户需求支撑，剧情悬浮。",
+      "reason": "北美细分服饰赛道有严格的市场逻辑，仅凭个人怀孕就做系列，且未上线就爆单，不符合服饰品牌的运作规律。",
+      "suggestion": "增加女主孕期的真实痛点调研，联合产科医生、人体工学设计师优化版型，解决哺乳、托腹、显瘦等真实需求，让系列的爆火有合理依据。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "女主怀孕后灵感迸发",
+        "做孕妇高定系列",
+        "还没上线就收到大量预定",
+        "孕妇系列的设定过于想当然",
+        "剧情悬浮"
+      ]
+    },
+    {
+      "case_id": "case_054",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "女主顶着压力做元宇宙时装发布会，上线就大获成功，轻松渡过行业寒冬。",
+      "problem": "数字化转型过于顺利，缺少试错与阻力，商战胜利来得太轻易，爽感廉价。",
+      "reason": "北美企业转型题材都会呈现技术难点、内部阻力、市场试错，一帆风顺的转型会让剧情失去真实感，爽点也显得廉价。",
+      "suggestion": "增加转型波折：首次内测卡顿严重、元老集体反对追加预算、团队加班优化技术方案，最终发布会成功，波折后的胜利更有爽感。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "上线就大获成功",
+        "轻松渡过行业寒冬",
+        "数字化转型过于顺利",
+        "缺少试错与阻力",
+        "商战胜利来得太轻易"
+      ]
+    },
+    {
+      "case_id": "case_055",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "行业寒冬里女主独自扛下所有，独自推动转型，团队全程执行。",
+      "problem": "缺少女性群体互助的情节，情绪价值不足，不符合北美市场的受众偏好。",
+      "reason": "北美女性题材非常看重群体成长与互助，女主单打独斗的设定，格局与情绪价值都有限，无法最大化引发女性共鸣。",
+      "suggestion": "增加公益基金扶持的年轻设计师团队，主动提出联合做线上秀场、直播带货，抱团取暖渡过寒冬，强化女性互助的传承线。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "独自推动转型",
+        "团队全程执行",
+        "缺少女性群体互助的情节",
+        "情绪价值不足",
+        "不符合北美市场的受众偏好"
+      ]
+    },
+    {
+      "case_id": "case_056",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "女主完美平衡家庭与事业，公司越做越好，公益基金也顺利推进。",
+      "problem": "平衡家庭事业的描写流于表面，没有具体的困境与成长，人物弧光不足。",
+      "reason": "北美女性题材关注“职场妈妈”的真实困境，轻描淡写的“完美平衡”不接地气，无法引发观众共情。",
+      "suggestion": "增加具体困境：产后复出错过重要会议、兼顾喂奶和熬夜改方案、职场被质疑“妈妈身份影响工作”，女主逐一破解困境，让成长更真实可感。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "女主完美平衡家庭与事业",
+        "公司越做越好",
+        "公益基金也顺利推进",
+        "没有具体的困境与成长",
+        "人物弧光不足"
+      ]
+    },
+    {
+      "case_id": "case_057",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "结局停留在一家三口幸福生活，爱情事业双丰收。",
+      "problem": "结局格局偏小，仅停留在个人幸福层面，未呼应女主全程的成长线，主题升华不足。",
+      "reason": "北美爆款女频剧的结局，通常会落点在“自我实现+价值传递”，单纯的圆满结局缺少余韵，记忆点弱。",
+      "suggestion": "结局落点在价值传承：海岛设计师驻地落成，全球年轻女设计师在此追梦，女主站在露台上看着众人，呼应母亲当年的理想，完成“活成光、传递光”的主题升华。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "结局"
+      ]
+    },
+    {
+      "case_id": "case_058",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "全剧反派行为动机单一，单纯嫉妒女主、为了使坏而使坏。",
+      "problem": "反派工具化严重，人设扁平，段位偏低，导致女主的胜利含金量不足。",
+      "reason": "高质量爽剧的核心是“强对手成就强主角”，低智商反派撑不起60集的剧情，也会让女主的逆袭爽感大打折扣。",
+      "suggestion": "给每个反派补充清晰的核心动机：Cora是多年深耕集团的旁支继承人，要守住自己的权力版图；Ethan是白手起家的凤凰男，极度渴望阶层跃升；Vivian是依附豪门的富家女，害怕跌落圈层，让反派行为逻辑自洽。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "反派工具化"
+      ]
+    },
+    {
+      "case_id": "case_059",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "多集以平缓场景开篇，单集仅结尾有一个钩子，中间剧情拖沓。",
+      "problem": "不符合北美短剧“黄金三秒开篇+高密度爽点”的创作规律，用户流失风险高。",
+      "reason": "北美短剧用户注意力周期极短，要求每集前3秒抓眼球，单集均匀分布爽点；平缓开篇+单一线性叙事会导致完播率大幅下降。",
+      "suggestion": "全剧执行黄金三秒原则，每集开篇直接切入冲突；单集保证2个以上小爽点，均匀分布在开篇、中段、结尾，每5集一个大爽点，提升追更粘性。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "黄金三秒开篇+高密度爽点",
+        "黄金三秒"
+      ]
+    },
+    {
+      "case_id": "case_060",
+      "project_title": "The Divorced Hale Heiress",
+      "source_file": "《The Divorced Hale Heiress》意见.docx",
+      "target_market": "北美",
+      "genre": "CEO霸总·豪门逆袭",
+      "original_text": "全剧多处出现“认祖归宗、逐出家门、家族元老、家长一言堂”等设定。",
+      "problem": "中式宗族思维贯穿剧情，与北美豪门的商业、法律逻辑违和，文化适配性差。",
+      "reason": "北美豪门的核心是现代企业治理与信托法律体系，宗族式的人身依附与惩罚规则，会让观众产生强烈的违和感，降低代入感。",
+      "suggestion": "所有宗族相关表述替换为现代商业规则：家族=集团+信托、元老=董事会股东、认亲=股权继承、逐出=职务解除+信托冻结，全程符合商业与法律逻辑。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "认祖归宗",
+        "元老"
+      ]
+    },
+    {
+      "case_id": "case_001",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "继父 Reed 先生站在她身侧，压低声音：“记住你的身份，Chloe 已经跑了，你替她嫁过去，公司的债就一笔勾销。你母亲当年的手术费是我出的，这笔债你躲不掉。”",
+      "problem": "替嫁动机建立在 “亲属债务连坐、父债女还” 的中式伦理上，北美观众无文化共鸣，且不符合北美法律与个人主义价值观，女主代入感弱。",
+      "reason": "北美社会遵循个人债务独立原则，成年子女无义务为继父、继妹的债务或婚姻买单，“替妹出嫁、用婚姻抵债” 的设定违背北美受众的基础认知，还会让女主显得懦弱被动，拉低角色好感度。",
+      "suggestion": "改为女主母亲生前创办的小型设计工作室，欠下 Voss 家族旗下创投基金的天使贷，母亲去世后债务违约，工作室面临破产清算；Voss 家族为稳定董事会提出契约婚姻方案 —— 女主以 “名义妻子” 身份陪对外宣称瘫痪的男主出席家族场合满 12 个月，债务即可全额豁免，同时女主可保留工作室所有权。用商业契约替代伦理绑架，符合北美市场的契约精神与个人价值观。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "亲属债务连坐、父债女还",
+        "替嫁",
+        "父债女还",
+        "债务连坐"
+      ]
+    },
+    {
+      "case_id": "case_002",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "第 2 集开篇：Natalie 屏住呼吸，贴着墙根躲进拐角。书房门被拉开，Kyle 走了出来，步伐稳健，根本没有半分瘫痪的样子。",
+      "problem": "大量集数以承接剧情的平缓场景开场，缺少首秒强冲突钩子，不符合北美短剧 “黄金 3 秒” 用户留存规则，用户划走率极高。",
+      "reason": "北美短剧用户注意力周期仅 3-5 秒，要求每集开篇直接抛出对峙、危机、反转类强张力画面；承接式的平缓开篇会直接导致完播率大幅下滑，尤其第 2-5 集是用户留存的关键节点。",
+      "suggestion": "全剧执行 “首秒入冲突” 原则：第 2 集开篇直接定格 “男主站在书房门口、女主躲在门外四目相对” 的对峙特写，再用 10 秒闪回补前情；每集前 3 秒必须完成 “危机 / 对峙 / 反转” 三选一，例如第 7 集开篇直接切 “总监把设计稿摔在女主脸上” 的冲突画面，快速抓住用户注意力。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "黄金 3 秒",
+        "首秒",
+        "瘫痪",
+        "书房"
+      ]
+    },
+    {
+      "case_id": "case_003",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "第 13 集 Kyle 以 Voss 科技 CEO 身份公开视察工作室，第 14 集向女主坦白全部身份秘密，隐藏身份的核心设定仅维持 12 集便彻底揭晓。",
+      "problem": "“secret-identity CEO” 是本剧核心卖点，身份揭秘过早，后续 40 余集失去核心悬念与情感拉扯力，用户追更动力大幅下降。",
+      "reason": "北美隐藏身份类爽剧的核心爽点，在于 “女主不知情下的心动 + 男主双重身份的极限拉扯 + 掉马瞬间的打脸爽感”，掉马节点通常设置在全剧 2/3 处；过早揭秘会导致后续剧情失去核心钩子，沦为普通商战家庭剧。",
+      "suggestion": "将正式掉马节点推迟到第 40 集左右（公司内鬼彻底肃清时）；前 40 集保留 “男主装瘫痪 + 女主半信半疑 + 多次差点掉马” 的拉扯感，增加 3 次以上 “险些暴露身份” 的惊险情节，比如男主在发布会后台差点被女主撞见、紧急坐回轮椅的名场面，最大化延长核心卖点的生命周期。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "secret-identity CEO",
+        "隐藏身份"
+      ]
+    },
+    {
+      "case_id": "case_004",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "第 6 集设计稿被盗、第 19 集继父大闹公司、第 21 集抄袭风波，三次核心危机均由男主 / 男主助理出面解决，女主全程被动承受，仅靠 “不卑不亢” 的台词支撑人设。",
+      "problem": "女主独立大女主人设立不住，核心爽点全部依赖男主撑腰，女性受众代入感弱，不符合北美市场 “女主主导破局” 的爽剧创作规律。",
+      "reason": "北美女频爽剧的核心规则是 “女主逆袭破局，男主锦上添花”，反复上演 “男主英雄救美” 会弱化女主的专业光环，让 “天才设计师” 的人设沦为空标签，降低女性观众的认同感与追更意愿。",
+      "suggestion": "重构危机解决逻辑，突出女主专业能力：设计稿被盗事件，女主当场拿出带隐形水印的源文件，自证清白并反向坐实总监抄袭；抄袭风波中，女主提前注册了设计版权，直接发律师函反诉对方侵权，靠专业能力完成打脸；男主仅在幕后提供信息支持，不直接出面，让女主成为爽点的核心制造者。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "不卑不亢",
+        "女主主导破局",
+        "男主助理"
+      ]
+    },
+    {
+      "case_id": "case_005",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "第 50-60 集大量篇幅描写夫妻白头偕老、孙辈出生、环游世界、去世后建博物馆等老年日常与家族传承内容。",
+      "problem": "后半段剧情彻底脱离 “隐藏身份霸总、先婚后爱、职场逆袭” 的核心题材，受众预期严重错位，是中段用户流失的核心原因。",
+      "reason": "北美短剧用户为 “浪漫爽感、职场逆袭、霸总拉扯” 付费 / 留存，晚年温情、家族传承属于小众内容，大篇幅描写会导致精准受众大量流失，拉低整体完播率。",
+      "suggestion": "删除 50-60 集的老年日常、去世、博物馆等全部偏离主线的内容；将剧情拉回核心赛道：女主品牌登顶后，发现当年母亲的创业贷款违约另有隐情，背后牵扯 Voss 家族上一代的商业恩怨，留下新的身份悬念与情感冲突，既紧扣核心题材，也为续作预留空间。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "隐藏身份霸总、先婚后爱、职场逆袭",
+        "隐藏身份",
+        "老年日常"
+      ]
+    },
+    {
+      "case_id": "case_006",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "老夫人 Victoria 见面直接开出支票：“我给你一笔钱，离开我儿子。” 后续多次在家宴、晚宴上公开刁难女主，当面挤兑其出身。",
+      "problem": "豪门婆媳冲突模式偏中式 “当面撒泼、金钱劝退”，不符合北美上流社会的社交规则，真实感与代入感弱。",
+      "reason": "北美豪门阶层的冲突更偏向规则化、体面化，极少当众撕破脸；婆婆对儿媳的不满通常通过商业手段表达，而非当面撒钱、当众羞辱。",
+      "suggestion": "将婆婆的刁难方式替换为北美豪门逻辑：见面时表面客气，实则拿出婚前协议，要求女主签署婚后财产独立、放弃家族信托继承权的条款；暗中动用资本渠道，封杀女主品牌的面料供应商与走秀资源，用商业规则打压女主，既符合人物身份，也让冲突更有张力。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "我给你一笔钱，离开我儿子。",
+        "当面撒泼、金钱劝退"
+      ]
+    },
+    {
+      "case_id": "case_007",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "反派 Chloe 全程动机为 “嫉妒女主嫁入豪门、想抢走 Kyle”，所有陷害行为均围绕 “争男人” 展开，手段局限于偷设计稿、散布谣言。",
+      "problem": "女反派动机局限于雌竞抢男人，格局狭小，工具人属性强，导致女主的胜利缺乏含金量，且不符合当下北美受众的内容偏好。",
+      "reason": "北美爆款爽剧的核心逻辑是 “强对手成就强主角”，单纯为情爱的反派撑不起 60 集体量；同时当下北美女性受众普遍反感 “雌竞” 设定，单一的抢男人动机容易引发观众反感。",
+      "suggestion": "给 Chloe 补充商业动机：她是竞品设计品牌的继承人，接近 Kyle 的核心目的是拿下 Voss 科技的联名合作，吞并女主的工作室；陷害女主既是抢资源，也是商业竞争，而非单纯抢男人；最终女主靠设计实力与商业布局彻底打垮竞品品牌，让反派的失败更有分量，也强化女主的事业线爽感。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "争男人"
+      ]
+    },
+    {
+      "case_id": "case_008",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "女主靠自学的网络安全知识，轻易黑进 Voss 科技核心服务器、反向追踪黑客、破解竞品加密文件，全程无技术门槛。",
+      "problem": "科技与商战设定过于儿戏，顶级科技公司的核心服务器可被随意入侵，不符合北美观众对硅谷科技行业的基础认知，剧情真实感弱。",
+      "reason": "北美受众大量接触科技类影视内容，对互联网安全、企业防火墙有基础认知，过于悬浮的技术设定会快速消耗观众信任，降低剧情代入感。",
+      "suggestion": "弱化女主的黑客属性，强化其设计师的专业优势：女主通过设计稿里的数字水印、源文件元数据追踪泄露路径，用设计行业的专业方法破局；商战部分补充董事会投票、股权收购、专利诉讼等符合北美商业规则的情节，提升剧情真实感与专业度。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "女主靠自学的网络安全知识",
+        "轻易黑进",
+        "Voss",
+        "科技核心服务器",
+        "反向追踪黑客"
+      ]
+    },
+    {
+      "case_id": "case_009",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "全剧核心女性角色中，除女主外均为反派（继妹 Chloe、婆婆 Victoria、名媛 Olivia），无正向女性配角与女性互助情节。",
+      "problem": "缺失女性成长与互助的情绪内核，不符合北美市场 “Girls help girls” 的受众偏好，情绪价值单一，难以引发女性观众深度共鸣。",
+      "reason": "北美女性题材受众高度看重女性之间的扶持与共鸣，女主单打独斗的人设格局偏小，也无法最大化挖掘女性向内容的情绪价值与传播度。",
+      "suggestion": "新增核心女性配角：资深面料供应商女老板，在女主被婆婆封杀供应链时出手相助；工作室的女性助理，全程陪女主创业打拼；后期女主成立女性设计师扶持基金，形成 “被帮助→帮助他人” 的成长闭环，强化女性互助的情绪价值。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "Girls help girls",
+        "婆婆",
+        "女性互助"
+      ]
+    },
+    {
+      "case_id": "case_010",
+      "project_title": "My Disabled Husband Is a Tech Billionaire",
+      "source_file": "修改意见.docx",
+      "target_market": "北美",
+      "genre": "先婚后爱・隐藏身份霸总・替嫁契约",
+      "original_text": "第 60 集结局为夫妻同年去世、庄园改博物馆、爱与传承的圆满收尾，无任何剧情留白。",
+      "problem": "大结局过于封闭圆满，无第二季核心悬念，不利于 IP 长线开发，也缺少让观众回味讨论的话题点。",
+      "reason": "北美爆款短剧普遍采用 “主线收尾 + 新悬念留白” 的结局结构，既满足当前季的情绪闭环，也为续作预留空间，同时能提升结尾的话题度与用户期待值。",
+      "suggestion": "在结局最后 10 秒增加强钩子：女主整理母亲遗物时拿到旧文件，发现母亲当年的创业贷款并非正常违约，而是被人恶意设计，而关键签字人正是男主的父亲；镜头定格在女主震惊的脸上，留下 “上一代恩怨 + 夫妻信任危机” 的双重悬念，为第二季铺垫核心冲突。",
+      "severity": "low",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "结局",
+        "第二季"
+      ]
+    },
+    {
+      "case_id": "case_001",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 1 集开篇：粗鄙的流浪狼一把将 Elara 按在吧台，利爪划破她的领口，酒液泼满她的工作服。",
+      "problem": "开篇冲突量级太轻，黄金三秒钩子不足，无法第一时间抓住北美用户注意力，划走率极高。",
+      "reason": "北美狼人短剧核心受众对 “普通骚扰” 类开篇已审美疲劳，黄金三秒必须直接抛出「宿命羁绊 + 身份危机 + 强对峙」三重钩子，平缓的骚扰开场留不住用户。",
+      "suggestion": "开篇直接切入「女主伪装 Omega 潜入族群禁地偷取灭族档案，被男主当场抓包，鼻尖相抵的瞬间两人同时触发宿命伴侣的本能震颤，男主利爪已经抵在她喉咙上」，3 秒内完成身份危机 + 宿命吸引 + 生死对峙三重强钩子。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "黄金三秒"
+      ]
+    },
+    {
+      "case_id": "case_002",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 3-4 集：Lilith 勒令 Elara 跪下来捡玻璃碎片，踩住她的手背当众羞辱，Elara 全程隐忍，直到 Kael 出场解围。",
+      "problem": "女主全程被动受辱，无任何自主反击，开篇大女主人设立不住，易引发北美女性受众的负面观感。",
+      "reason": "北美女频爽剧核心规则是「女主即时反制，男主锦上添花」，女主全程等待救援会弱化主角光环，大幅降低女性观众的代入感与认同感。",
+      "suggestion": "增加女主即时反击细节：Lilith 踩手的瞬间，女主不动声色用碎玻璃划向对方脚踝，精准戳破她 “靠家族身份耀武扬威” 的痛点，先用言语 + 小动作扳回一城；男主出场是升级震慑，而非唯一救星。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "3-4",
+        "Lilith",
+        "勒令",
+        "Elara",
+        "跪下来捡玻璃碎片"
+      ]
+    },
+    {
+      "case_id": "case_003",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "全剧多处出现 “逐出家族”“认祖归宗”“参见少主”“家族元老议事” 等表述，采用宗族家长制的权力逻辑。",
+      "problem": "中式宗族思维贯穿族群设定，与北美狼人题材的「Pack 族群规则、等级制度、领地法律」文化适配性差，观众违和感强。",
+      "reason": "北美狼人 IP 通用世界观中，族群运行遵循狼群等级制（Alpha/Beta/Omega）、领地法、族群契约，不存在东方式的宗族人身依附、认祖归宗、少主继承概念，相关设定会大幅降低剧情真实感与代入感。",
+      "suggestion": "所有宗族表述替换为北美狼人通用设定：“逐出家族” 改为「剥夺族群身份、驱逐出领地」；“认祖归宗” 改为「确认银月族群继承人身份、激活血脉契约」；“少主” 改为「继承人（Heir）」；“家族元老” 改为「族群长老议会（Elder Council）」，全程符合族群等级与法律逻辑。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "逐出家族",
+        "认祖归宗",
+        "参见少主",
+        "家族元老议事",
+        "元老",
+        "狼人",
+        "族群"
+      ]
+    },
+    {
+      "case_id": "case_004",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 7 集 Elara 趁 Kael 不在，撬开书房锁翻找灭族卷宗；第 13 集又偷偷溜进族群档案室，查找当年参与灭族的人员名单。",
+      "problem": "顶级 Alpha 宅邸、族群核心涉密区域安保形同虚设，女主潜入毫无阻碍，剧情逻辑严重失真。",
+      "reason": "北美狼人题材中，Alpha 私邸与核心涉密区域都有气味结界、守卫轮班、符文禁制，普通 Omega 不可能随意潜入，过于轻易的潜入会让剧情可信度彻底崩塌。",
+      "suggestion": "改为女主利用 Omega 身份做掩护，借打扫名义进入书房，用母亲留下的银月吊坠暂时屏蔽气味结界，过程中多次险些被守卫发现；档案室则需要伪造身份权限，全程伴随被发现的紧张感，强化潜入合理性。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "Alpha",
+        "族群",
+        "书房",
+        "档案室"
+      ]
+    },
+    {
+      "case_id": "case_005",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "Lilith 抬手想扇 Elara 耳光，后续又拿着散功水药剂直接朝 Elara 脸上泼去。",
+      "problem": "反派刁难手段低级粗暴，如同市井争执，不符合贵族 Omega 的身份段位，对手戏缺乏张力。",
+      "reason": "北美狼人题材中，高阶 Omega 的打压方式多为社交孤立、规则构陷、名誉诋毁、剥夺族群福利，当众动手泼药属于自降身份的行为，不符合高端圈层行为逻辑，也拉低剧情格局。",
+      "suggestion": "Lilith 利用族群规则刁难：以 “身份不明的流浪 Omega” 为由，取消女主的族群补给资格，安排最繁重的体力工作，在社交场合散布女主 “靠身体上位” 的谣言，用规则和名誉打压，符合人物身份与圈层逻辑。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "Omega"
+      ]
+    },
+    {
+      "case_id": "case_006",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 20 集：Lilith 绑架 Elara 后，开启全族群直播，要当众揭穿她的余孽身份并处决她。",
+      "problem": "私刑直播设定过于儿戏，不符合北美狼人族群的司法规则，剧情合理性弱。",
+      "reason": "北美狼人世界观中，处置族群成员必须经过长老议会审判、遵循族群法典，私自行刑是重罪；反派私下绑架直播处决的设定，既不符合规则，也会让反派显得鲁莽无脑。",
+      "suggestion": "改为 Lilith 联合长老会鹰派，召开临时族群审判大会，拿出伪造的证据，按族群法典判处女主 “谋逆罪”，当场执行永久放逐刑罚，用合法程序构陷，既符合族群规则，也让冲突更有张力。",
+      "severity": "high",
+      "category": "合规风险",
+      "trigger_keywords": [
+        "绑架",
+        "狼人",
+        "族群",
+        "私刑直播"
+      ]
+    },
+    {
+      "case_id": "case_007",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "全剧多次重复「反派暗算女主→女主陷入危机→男主及时赶到救人」的剧情模板，中段 30-40 集连续出现下毒、偷袭、绑架类同类危机。",
+      "problem": "中段危机模式高度重复，爽点套路化，剧情注水严重，观众极易产生审美疲劳，追更意愿大幅下降。",
+      "reason": "北美短剧核心吸引力是「持续升级的冲突与反转」，同质化的救美桥段会快速消耗观众耐心，是长剧完播率下滑的核心原因。",
+      "suggestion": "重构中段危机模式：第一次绑架危机女主靠智慧自救 + 男主收尾；第二次下毒危机女主提前识破反设陷阱，让反派自食恶果；第三次圣地遇袭女主借环境力量反杀敌人。每一次危机都体现女主成长，男主从 “主力救援” 变为 “辅助兜底”，避免套路重复。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "男主及时赶到",
+        "绑架"
+      ]
+    },
+    {
+      "case_id": "case_008",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 35 集：Hale 长老从流放地逃了出来，联系旧部联合黑岩族复仇。",
+      "problem": "重刑犯轻易逃脱流放地，族群刑罚体系形同虚设，剧情逻辑悬浮。",
+      "reason": "北美狼人题材中，流放地有严格的守卫与禁制，重刑犯逃脱属于重大剧情事件，需要有内应、周密计划与明确代价，一句话 “逃出来” 会让族群规则失去严肃性。",
+      "suggestion": "补充 Hale 逃脱的完整逻辑：他买通流放地守卫队长，联合外部旧部里应外合，付出废掉半条狼脉的代价才逃出，且逃脱后只能躲在暗处，不敢公开露面，让设定更符合逻辑。",
+      "severity": "medium",
+      "category": "世界观适配",
+      "trigger_keywords": [
+        "族群",
+        "流放地"
+      ]
+    },
+    {
+      "case_id": "case_009",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 29 集：Elara 握住狼王权杖，瞬间封印碎裂，彻底觉醒银月狼王血脉，转头就一招打败流浪狼头领。",
+      "problem": "觉醒过程无痛苦、无挣扎、无铺垫，力量获取过于轻易，逆袭爽感不扎实，金手指感过重。",
+      "reason": "北美观众认可 “付出代价的成长”，血脉觉醒通常伴随巨大的痛苦、意志考验，甚至失败风险；一键觉醒的设定会让爽感变得廉价。",
+      "suggestion": "增加觉醒的挣扎与考验：权杖力量冲击血脉，女主在幻境中直面父母死亡的创伤，战胜内心的恐惧与仇恨才完成觉醒；觉醒后有三天力量失控期，需要男主协助稳定，让成长有过程、有代价，爽感更落地。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "银月",
+        "狼王血脉"
+      ]
+    },
+    {
+      "case_id": "case_010",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 34 集：Kael 受伤醒来后，直白告白 “我喜欢你，做我的王后好不好”，女主直接答应。",
+      "problem": "宿命伴侣的核心看点「本能吸引 vs 理智对抗」的拉扯感缺失，感情推进过于直白顺畅，情绪张力不足。",
+      "reason": "北美狼人宿命伴侣题材的核心爽点，是 “理智上立场对立、身份有别，身体却诚实被吸引” 的极限拉扯；直白告白会消解这种张力，降低观众追更期待。",
+      "suggestion": "改为生死关头的本能告白：男主替女主挡刀濒死，无意识呢喃 “别离开我，我的伴侣”，女主含泪回应 “我不走”；两人都以为对方没听清，清醒后刻意回避，继续保持盟友距离，用 “双向心动却不敢戳破” 的拉扯替代直白告白，延长情绪钩子。",
+      "severity": "medium",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "我喜欢你，做我的王后好不好",
+        "本能吸引 vs 理智对抗",
+        "宿命伴侣"
+      ]
+    },
+    {
+      "case_id": "case_011",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 40 集：长老们正式提议银月族和新月族合并，由两人共同统治，两族族人纷纷赞同。",
+      "problem": "两大族群合并流程过于简单，无利益博弈、无权力分配、无反对声音，不符合族群政治逻辑，剧情真实感弱。",
+      "reason": "北美狼人族群的合并涉及领地、资源、权力、等级的重新分配，必然有保守派反对、有利益交换，全票通过的设定过于理想化，显得剧情幼稚。",
+      "suggestion": "增加族群合并的博弈过程：新月族保守长老担心权力被稀释，银月族战士不愿寄人篱下，两人多次召开议会谈判，定下「双 Alpha 共治、议会席位各半、资源共享」的盟约，解决多轮分歧后才正式合并，提升剧情厚重感。",
+      "severity": "medium",
+      "category": "世界观适配",
+      "trigger_keywords": [
+        "银月",
+        "族群"
+      ]
+    },
+    {
+      "case_id": "case_012",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "终极反派 Cain 是当年的叛徒，如今成了血月狼王，单纯想吞并领地、杀掉女主斩草除根。",
+      "problem": "终极反派动机单薄，工具人属性强，反派段位不足，导致最终决战的含金量不足，爽感打折扣。",
+      "reason": "北美爆款爽剧的终极反派都有清晰的信念与利益诉求，“单纯为坏而坏” 的反派撑不起大结局的体量，也无法凸显女主的成长与智慧。",
+      "suggestion": "补充 Cain 的深层动机：当年他认为银月狼王坚持和平路线会葬送族群，才联合外人 “取而代之”；他的终极目标是统一所有狼族，建立强者为尊的新秩序；同时补充他的谋略布局，比如策反族群内部长老、散布谣言动摇民心，让反派更有层次感。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "终极反派",
+        "Cain",
+        "是当年的叛徒",
+        "如今成了血月狼王",
+        "单纯想吞并领地"
+      ]
+    },
+    {
+      "case_id": "case_013",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 47 集：Elara 突然爆发出耀眼银光，身后浮现巨大银狼虚影，进入狼王终极形态，靠血脉威压直接压制全场。",
+      "problem": "终极力量无任何前置伏笔，危急关头凭空解锁，剧情悬浮感强，属于机械降神式的胜利。",
+      "reason": "北美超自然题材的力量升级必须有完整链路，从伏笔、试炼到最终解锁；临危解锁挂会让观众觉得胜利来得太轻易，没有成就感。",
+      "suggestion": "在前文增加 3 处以上铺垫：1. 月神泉祭司提到 “极致的守护欲能唤醒狼王终极形态”；2. 女主情绪激动时曾短暂出现虚影；3. 母亲的日记记载过终极形态的触发条件；最终决战时因保护男主的执念触发，逻辑闭环，爽感更足。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "47",
+        "Elara",
+        "突然爆发出耀眼银光",
+        "身后浮现巨大银狼虚影",
+        "进入狼王终极形态"
+      ]
+    },
+    {
+      "case_id": "case_014",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 50-52 集：女主怀孕、小公主出生、男主变女儿奴，大篇幅描写育儿日常。",
+      "problem": "剧情从复仇逆袭、族群争霸突然转向家庭育儿，爽点彻底断层，节奏大幅放缓，极易导致用户流失。",
+      "reason": "北美狼人短剧核心受众的核心需求是「复仇、逆袭、权力、爽感」，温馨育儿日常属于小众需求，大篇幅描写会偏离主线，冲击完播率。",
+      "suggestion": "大幅压缩育儿日常篇幅，怀孕与女儿出生仅用 1 集带过，且绑定剧情冲突：女主怀孕时遭遇残余反派刺杀，孕期仍坚持处理族群事务，体现 “女强人也能当母亲” 的人设；删除低龄育儿日常，直接跳到女儿少年时期展现天赋，全程不脱离爽剧主线。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "族群"
+      ]
+    },
+    {
+      "case_id": "case_015",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "多集以平缓场景开篇，单集仅结尾有一个冲突钩子，中段以对话、铺垫为主，无密集爽点。",
+      "problem": "不符合北美短剧「强节奏、高密度爽点」的创作规律，单集有效信息少，用户划走风险高。",
+      "reason": "北美短剧用户注意力周期约 30 秒，要求每集前 3 秒有钩子、单集至少 2 个小爽点 / 反转，平缓的线性叙事会直接导致完播率下滑。",
+      "suggestion": "全剧执行「3 秒钩子 + 双爽点 + 结尾强钩子」结构：每集开篇直接切入冲突；中段安排 1 次女主反杀 / 打脸 / 能力升级的小爽点；结尾抛出新危机 / 反转的强钩子；全剧每 5 集一个大爽点（觉醒、翻案、决战胜利），均匀分布爽点密度。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "强节奏、高密度爽点"
+      ]
+    },
+    {
+      "case_id": "case_016",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "男主被称为 “铁面 Alpha”，但剧情仅体现性格冷淡，无足够冷酷事迹支撑，后期快速陷入恋爱，人设割裂。",
+      "problem": "男主 “冷酷铁面” 的标签空泛，无具体事件支撑，人设反差感不足，角色记忆点弱。",
+      "reason": "北美 Alpha 类男主的核心魅力，在于「对全世界冷酷，只对女主例外」的极致反差；没有前期冷酷铺垫，后期的偏爱就没有冲击力。",
+      "suggestion": "开篇补充男主冷酷事迹铺垫：前 1 集就展现他当众废掉犯错下属的狼脉、对求情者毫不动容的场景，先立住 “铁面” 人设；后续他对女主的破例、失控、温柔才会形成强烈反差，强化角色记忆点。",
+      "severity": "medium",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "铁面 Alpha",
+        "冷酷铁面",
+        "Alpha"
+      ]
+    },
+    {
+      "case_id": "case_017",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "全剧主要女性角色仅女主（正派）和 Lilith（反派），无其他正向女性配角，缺少女性同盟线。",
+      "problem": "缺少女性互助情节，情绪价值单薄，不符合北美市场「Girls help girls」的受众偏好。",
+      "reason": "北美女性题材受众非常看重女性同盟、彼此扶持的情绪价值，女主单打独斗的设定格局偏小，也无法最大化引发女性观众共鸣。",
+      "suggestion": "新增女性配角：新月族女 Beta 医师，多次暗中帮女主掩饰身份、处理伤口；银月族女战士副手，陪女主出生入死；后期女主成立女性战士营，扶持族群里的弱势 Omega，形成 “被母亲保护→被同伴帮助→帮助更多女性” 的传承线，强化女性互助主题。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "Girls help girls",
+        "女性互助"
+      ]
+    },
+    {
+      "case_id": "case_018",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 54 集：老祭司拿出古老预言，说女主的女儿是双血脉圣主，会带领狼族迎来和平，各族首领纷纷跪拜。",
+      "problem": "预言设定俗套老套，且与主线复仇逆袭关联度低，强行拔高格局显得突兀，落地感差。",
+      "reason": "北美观众对 “天选之子”“古老预言” 的套路已经审美疲劳，脱离主线的预言会让剧情重心偏移，显得悬浮。",
+      "suggestion": "删除 “预言圣主” 设定，改为女儿的双血脉是「族群融合的象征」，各族首领认可是因为女主夫妇的治理能力与和平政策，而非虚无的预言；把格局落在 “人创造历史”，而非 “天选命运”，更符合北美受众的价值观。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "古老预言"
+      ]
+    },
+    {
+      "case_id": "case_019",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "第 60 集结局：夫妇二人俯瞰盛世，女儿长大成人，族群和平繁荣，故事圆满结束。",
+      "problem": "大结局无悬念、无续作钩子，不利于 IP 长线开发，也缺少让观众回味的余韵。",
+      "reason": "北美爆款短剧都会在结局留下第二季伏笔，比如新敌人出现、隐藏秘密揭开，既给观众留下期待，也为续作留足空间。",
+      "suggestion": "在结局最后 10 秒增加钩子：边境传来消息，东方狼族部落大举西进，领头人带着银月族古老信物，声称自己才是正统银月狼王；镜头定格在女主凝重的脸上，留下第二季核心悬念。",
+      "severity": "low",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "结局",
+        "族群"
+      ]
+    },
+    {
+      "case_id": "case_020",
+      "project_title": "Silver Alpha’s Hidden Queen",
+      "source_file": "《Silver Alpha’s Hidden Queen》修改意见.docx",
+      "target_market": "北美",
+      "genre": "狼人 Alpha・宿命伴侣・族群复仇",
+      "original_text": "散灵散剧毒只有月神泉能解，月神泉在极北圣地，有冰狼守护兽，是银月族圣物。",
+      "problem": "神话元素过重，偏离北美主流狼人题材的族群写实风格，世界观融合度差。",
+      "reason": "北美主流狼人 IP 的力量体系偏向生物属性（血脉、等级、体能），“圣泉解毒、守护兽” 这类强奇幻设定，与狼人题材的硬核风格违和，容易让观众出戏。",
+      "suggestion": "替换为更贴合狼人设定的解毒方式：银月族血脉本身有自愈能力，需要进入极北冰原的狼族古地，借助古地的月光能量激活血脉自愈；守护兽改为古地的野生狼群，是银月族世代守护的伙伴，弱化玄幻感，强化族群传承属性。",
+      "severity": "low",
+      "category": "世界观适配",
+      "trigger_keywords": [
+        "狼人",
+        "银月",
+        "族群",
+        "月神泉"
+      ]
+    },
+    {
+      "case_id": "case_001",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "全剧多处使用 “家族长老”“逐出家族”“认祖归宗” 等表述，家族权力采用家长制、长老一言堂的决策模式。",
+      "problem": "中式宗族思维植入黑手党题材，文化违和感强烈，不符合北美观众对黑手党世界观的基础认知。",
+      "reason": "北美受众对黑手党的认知源于《教父》《黑道家族》等经典 IP，核心权力结构是家族议会、顾问（Consigliere）、股东合伙人制度，东方式的 “长老独断”“逐出家门”“宗族认亲” 设定会大幅降低剧情真实感与代入感。",
+      "suggestion": "全部替换为北美黑手党通用设定：“长老” 改为家族顾问 / 元老股东；“逐出家族” 改为剥夺家族股份、除名合伙人身份、断绝所有生意往来；所有重大决策走家族议会投票制，而非家长一人裁决；洪门认亲线弱化宗族属性，改为北美亚裔商会的商业合作关系。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "家族长老",
+        "逐出家族",
+        "认祖归宗",
+        "黑手党"
+      ]
+    },
+    {
+      "case_id": "case_002",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "多集以平缓场景开篇，如第 2 集 “黑色劳斯莱斯驶入哈德逊河畔的庄园”、第 7 集 “第二天一早，庄园来了位不速之客”，前 3 秒无核心冲突。",
+      "problem": "单集开篇无强冲突钩子，不符合北美短剧黄金三秒留存规则，首秒用户划走率极高。",
+      "reason": "北美短剧用户注意力周期仅 3-5 秒，要求每集开篇直接切入危机、对峙或反转；平缓的线性叙事会直接导致完播率大幅下滑。",
+      "suggestion": "全剧执行 “首秒入冲突” 原则，每集前 3 秒必须抛出强张力画面：第 2 集开篇直接切女主撬书房锁被男主抓包的对峙瞬间，再闪回前情；第 7 集开篇直接定格 Sofia 抬手要扇女主的画面，再补背景交代。每集开篇完成 “危机 / 对峙 / 反转” 三选一，牢牢抓住用户注意力。",
+      "severity": "high",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "黑色劳斯莱斯驶入哈德逊河畔的庄园",
+        "第二天一早，庄园来了位不速之客",
+        "黄金三秒",
+        "首秒"
+      ]
+    },
+    {
+      "case_id": "case_003",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "第 15 集女主被 Sofia 绑架、第 35 集被 Victor 绑架、第 47 集女儿被绑架，三次危机均以男主赶到救援为核心解决方式，女主全程被动等待。",
+      "problem": "女主成长线薄弱，同质化危机重复出现，且全程依赖男主救援，独立大女主人设立不住，易引发北美女性受众反感。",
+      "reason": "北美女频爽剧核心规则是 “女主主导破局，男主锦上添花”，反复上演英雄救美会弱化女主光环，让 “天才黑客” 的人设沦为空谈，降低女性观众的代入感与认同感。",
+      "suggestion": "重构危机解决逻辑，体现女主成长：第一次被绑架，女主用随身黑客设备定位、反向锁死对方车辆，自行撑到男主赶到；第二次被绑架，女主策反反派底层手下、利用化工厂环境反杀看守，自行脱困；女儿被绑架，女主通过技术追踪定位、布下陷阱伏击，和男主前后夹击破局。男主从 “主力救援” 变为 “收尾兜底”。",
+      "severity": "high",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "绑架",
+        "女儿被绑架"
+      ]
+    },
+    {
+      "case_id": "case_004",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "第 51-54 集苏格兰古堡诅咒考验、第 56-57 集 AI 失控危机，两条支线与 “黑手党博弈、抵债契约” 核心题材完全脱节。",
+      "problem": "后半段剧情严重偏离核心卖点，题材跳转突兀，观众预期错位，是导致中段用户流失的核心原因。",
+      "reason": "北美短剧受众粘性高度依赖题材一致性，用户为 “黑手党、双强拉扯、地下世界博弈” 而来，突然跳转奇幻诅咒、科幻 AI 剧情，会造成精准受众大量流失。",
+      "suggestion": "删除古堡诅咒、AI 失控两条完全偏离主线的支线；压缩洪门剧情，将其改为北美亚裔商会的商业合作线，全程服务于家族洗白的主线；腾出的篇幅回归黑手党核心博弈：华尔街资本暗战、FBI 卧底调查、家族内部权力洗牌，始终紧扣核心题材。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "黑手党博弈、抵债契约",
+        "契约",
+        "黑手党",
+        "古堡诅咒",
+        "AI 失控"
+      ]
+    },
+    {
+      "case_id": "case_005",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "Sofia 只会当众撒泼扇人、Victor 两次越狱都只会粗暴绑架、南美毒枭只会正面硬刚，所有反派动机单一，仅为 “使坏而使坏”。",
+      "problem": "反派工具化严重，段位偏低，无清晰的利益逻辑与谋略布局，导致主角的胜利缺乏含金量，剧情张力不足。",
+      "reason": "北美爆款爽剧的核心逻辑是 “强对手成就强主角”，低智反派撑不起 60 集体量，也会让男主 “灰影教父” 的人设显得名不副实，爽感大打折扣。",
+      "suggestion": "给每个核心反派补充深层动机与高阶手段：Sofia 核心诉求是掌控沃斯家族港口生意，手段为商业渗透、安插财务内鬼、做空股价，而非单纯争风吃醋；Victor 的动机是夺回家族继承权，布局为煽动元老政变、联合外部资本做空，而非纵火绑架；毒枭采用合法生意渗透、腐蚀政界人脉，从规则层面打压沃斯家族。",
+      "severity": "high",
+      "category": "商业逻辑",
+      "trigger_keywords": [
+        "使坏而使坏",
+        "绑架",
+        "反派工具化"
+      ]
+    },
+    {
+      "case_id": "case_006",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "男主 “灰影教父” 的冷酷人设仅靠台词铺垫，开篇就对女主特殊对待，全程温柔兜底，无实际狠戾事迹支撑。",
+      "problem": "男主 “冷酷狠戾” 的标签空泛，与后期偏爱形成的反差感不足，角色记忆点弱。",
+      "reason": "北美 Alpha 型男主的核心魅力在于 “极致反差”—— 必须先立住 “对敌人狠、对规则冷” 的人设，后续对女主的破例与失控才会有足够的冲击力与苏感。",
+      "suggestion": "前 3 集补充男主冷酷事迹细节：开篇就展现他当场处决背叛的手下、对求情的合作伙伴毫不留情、一句话搞垮竞品公司的桥段，先夯实 “灰影教父” 的狠戾人设；后续他为女主打破规则、情绪失控的情节，才会形成强烈反差，强化角色记忆点。",
+      "severity": "medium",
+      "category": "合规风险",
+      "trigger_keywords": [
+        "灰影教父",
+        "冷酷狠戾"
+      ]
+    },
+    {
+      "case_id": "case_007",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "第 20 集密室生死后两人确认心意，后续 40 集情感线几乎无拉扯，只剩并肩解决外部危机。",
+      "problem": "核心情感线的 “控制与反抗、禁忌拉扯” 过早结束，失去题材核心看点，后续剧情缺乏情绪钩子。",
+      "reason": "北美 “抵债契约 + 强制爱” 类题材的核心爽点，是 “身份对立下的本能心动、理智克制下的失控沦陷”；过早戳破窗户纸，会大幅降低用户的追更动力。",
+      "suggestion": "将正式确认关系推迟到第 35 集左右（内鬼伏法、女主父亲平反后）；前 30 集强化 “盟友以上、恋人未满” 的拉扯：男主克制占有欲、女主刻意保持距离、生死关头的下意识保护、清醒后的刻意回避，用细节糖替代直白告白，延长情感线的张力周期。",
+      "severity": "medium",
+      "category": "合规风险",
+      "trigger_keywords": [
+        "控制与反抗、禁忌拉扯",
+        "控制与反抗",
+        "密室生死"
+      ]
+    },
+    {
+      "case_id": "case_008",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "Victor 多次轻易从最高安保监狱越狱、反派能随意潜入庄园书房、女主多次轻松偷取核心机密，顶级家族安保形同虚设。",
+      "problem": "关键剧情逻辑缺乏合理性，突破行为过于轻易，剧情悬浮儿戏，真实感弱。",
+      "reason": "北美黑手党题材受众非常看重 “真实感”，对顶级家族安保、重刑犯监狱管控有基础认知，过于悬浮的设定会快速消耗观众信任。",
+      "suggestion": "补充所有突破行为的合理逻辑：Victor 越狱需要买通高层狱警、付出一半身家的代价，且越狱后只能躲在暗处，无法公开活动；反派潜入庄园需要提前安插卧底数月，且只能进入外围区域；女主偷取机密需要利用身份掩护、借助黑客技术层层突破，全程伴随被发现的风险，强化过程的紧张感与合理性。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "最高安保监狱",
+        "书房"
+      ]
+    },
+    {
+      "case_id": "case_009",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "全剧正面女性角色仅女主一人，其余女性均为反派情敌，无女性互助相关情节。",
+      "problem": "缺少女性成长与互助的情绪内核，不符合北美市场 “Girls help girls” 的受众偏好，情绪价值单薄。",
+      "reason": "北美女性题材受众高度看重女性之间的扶持与共鸣，单打独斗的女主人设格局偏小，也无法最大化引发女性观众的情感共鸣。",
+      "suggestion": "新增核心女性配角：男主的女性法务顾问，多次在规则层面帮女主解围；女主的黑客闺蜜，技术上并肩作战；后期女主成立女性创业扶持基金，帮助底层女性谋生。形成 “被孤立→结识同伴→反哺更多女性” 的成长线，强化女性互助的情绪价值。",
+      "severity": "medium",
+      "category": "女主独立",
+      "trigger_keywords": [
+        "Girls help girls",
+        "女性互助"
+      ]
+    },
+    {
+      "case_id": "case_010",
+      "project_title": "Shadow Boss’s Debt Bride",
+      "source_file": "修改意见.doc（Shadow Boss’s Debt Bride）",
+      "target_market": "北美",
+      "genre": "黑手党黑市拍卖・控制与反抗・双强博弈",
+      "original_text": "第 60 集结局为男女主白头偕老、儿孙满堂，圆满收尾，无任何悬念留白。",
+      "problem": "大结局过于封闭圆满，无第二季伏笔，不利于 IP 长线开发，也缺少让观众回味的余韵。",
+      "reason": "北美爆款短剧普遍会在结局留下开放式悬念，既提升话题度，也为续作预留空间；一次性圆满收尾会大幅降低 IP 的长尾价值。",
+      "suggestion": "在结局最后 10 秒增加强钩子：一份加密文件送到老年男主手中，文件显示当年他父亲的死亡背后，还有从未露面的东海岸黑手党委员会在操控；镜头定格在男女主凝重的对视上，留下第二季核心悬念。",
+      "severity": "low",
+      "category": "黄金三秒",
+      "trigger_keywords": [
+        "结局",
+        "第二季"
+      ]
+    }
+  ]
+}
