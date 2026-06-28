@@ -381,13 +381,25 @@ if analyze_clicked:
             st.subheader("🗂️ 四、知识库透视")
             cat_counter = Counter([r.get("category", "文化适配") for r in rules])
             proj_counter = Counter([r.get("project_title", "未知项目") for r in rules])
+
+            def counter_to_markdown(counter, col_name):
+                if not counter:
+                    return "暂无数据"
+                lines = [f"| {col_name} | 数量 |", "|---|---:|"]
+                for key, value in counter.most_common():
+                    lines.append(f"| {key} | {value} |")
+                return "\n".join(lines)
+
             cc1, cc2 = st.columns(2)
+
             with cc1:
                 st.write("规则类型分布")
-                st.bar_chart(dict(cat_counter))
+                st.markdown(counter_to_markdown(cat_counter, "规则类型"))
+
             with cc2:
                 st.write("项目来源分布")
-                st.bar_chart(dict(proj_counter))
+                st.markdown(counter_to_markdown(proj_counter, "项目来源"))
+
             st.caption("这些规则来自专家修改意见，后续可继续接入真实过稿/退稿数据与多地区文化禁忌库。")
 
         with tab4:
